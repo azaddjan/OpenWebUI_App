@@ -1,0 +1,10 @@
+/dist/mac-arm64/
+/dist/builder-debug.yml
+/dist/builder-effective-config.yaml
+/dist/latest-mac.yml
+/.venv/
+/dist/OpenWebUI-1.0.0-arm64.dmg.blockmap
+/logs/open-webui.log
+/.webui_secret_key
+*.dmg
+/node_modules/

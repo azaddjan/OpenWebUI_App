@@ -1,0 +1,46 @@
+{
+  "name": "open-webui",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": {
+    "name": "Azad Djan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azaddjan/open-webui-electron.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.openwebui.app",
+    "productName": "OpenWebUI",
+    "copyright": "Copyright © 2024 Azad Djan",
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities",
+      "icon": "src/assets/icons/app-icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icons/app-icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "src/assets/icons/"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^26.1.0",
+    "electron-builder": "25.1.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
